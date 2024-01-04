@@ -1,0 +1,60 @@
+.root {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageColumn {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.infoColumn {
+  flex: 2;
+  padding: 20px;
+}
+
+.name {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.priceDiscount {
+  font-size: 1.5rem;
+  color: #E44D26;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.priceOriginal {
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+}

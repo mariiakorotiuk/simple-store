@@ -1,0 +1,47 @@
+.root {
+  position: fixed;
+  top: 0px;
+  background-color: #f7f7f7;
+  width: calc(100% - 40px);
+  height: 54px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin: 0;
+  margin-right: auto;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #E44D26;
+}
+
+.cart {
+  position: relative;
+}
+
+.quantity {
+  background-color: #E44D26;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  right: 0;
+}
+
+.cart img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}

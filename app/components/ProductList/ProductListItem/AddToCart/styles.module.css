@@ -1,0 +1,18 @@
+.root {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: #E44D26;
+  color: white;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.root:hover {
+  background: #CC3A20;
+}
