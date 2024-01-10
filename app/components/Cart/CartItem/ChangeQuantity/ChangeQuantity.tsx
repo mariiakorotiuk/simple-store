@@ -3,9 +3,9 @@ import { CartProduct } from "~/routes/cart";
 import styles from "./srtyles.module.css";
 
 interface ChangeQuantityProps {
-  product: CartProduct
-  buttonText: string
-  action: string
+  product: CartProduct;
+  buttonText: string;
+  action: string;
 }
 
 const ChangeQuantity: React.FC<ChangeQuantityProps> = ({ product, buttonText, action }) => {

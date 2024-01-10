@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+.arrow {
+  background-color: #E44D26;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color: #CC3A20;
+}

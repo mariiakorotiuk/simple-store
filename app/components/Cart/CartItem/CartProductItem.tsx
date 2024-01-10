@@ -4,7 +4,7 @@ import ChangeQuantity from "./ChangeQuantity/ChangeQuantity";
 import styles from "./styles.module.css";
 
 interface CartProductItemProps {
-  product: CartProduct
+  product: CartProduct;
 }
 
 const CartProductItem: React.FC<CartProductItemProps> = ({ product }) => {

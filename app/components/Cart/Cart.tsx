@@ -4,7 +4,7 @@ import CartProductItem from "./CartItem/CartProductItem";
 import styles from "./styles.module.css";
 
 interface CartProps {
-  cartProducts: CartProduct[]
+  cartProducts: CartProduct[];
 }
 
 const Cart: React.FC<CartProps> = ({ cartProducts }) => {

@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  width: 200px
+}

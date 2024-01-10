@@ -1,8 +1,8 @@
 import { Session } from "@remix-run/node";
 
 export interface CartItem {
-  productId: string | number,
-  quantity: number
+  productId: string | number;
+  quantity: number;
 }
 
 export const SESSION_KEY = "cart";

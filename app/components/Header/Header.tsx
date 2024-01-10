@@ -3,6 +3,7 @@ import { Link, useRouteLoaderData } from "@remix-run/react";
 import invariant from "tiny-invariant";
 import type { loader } from "~/root";
 import styles from "./styles.module.css";
+import SearchForm from "./SearchForm/SearchForm";
 
 const Header: React.FC = () => {
   const data = useRouteLoaderData<typeof loader>("root");
@@ -15,6 +16,7 @@ const Header: React.FC = () => {
       <h2>
         <Link to="/">Simple Store</Link>
       </h2>
+      <SearchForm />
       <div className={styles.cart}>
         <p className={styles.quantity}>{quantity}</p>
         <Link to="cart">

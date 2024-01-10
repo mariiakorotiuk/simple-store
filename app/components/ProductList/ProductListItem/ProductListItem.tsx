@@ -7,7 +7,7 @@ import type { loader as rootLoader } from "~/root";
 import styles from "./styles.module.css";
 
 interface ProductListItemProps {
-  product: Product
+  product: Product;
 }
 
 const ProductListItem: React.FC<ProductListItemProps> = ({ product }) => {

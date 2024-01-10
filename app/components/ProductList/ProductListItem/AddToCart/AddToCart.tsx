@@ -4,8 +4,8 @@ import { useFetcher } from "@remix-run/react";
 import styles from "./styles.module.css";
 
 interface AddToCartProps {
-  product: Product
-  quantity: number
+  product: Product;
+  quantity: number;
 }
 
 const AddToCart: React.FC<AddToCartProps> = ({ product, quantity }) => {

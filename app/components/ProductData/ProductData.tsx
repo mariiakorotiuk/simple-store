@@ -3,8 +3,8 @@ import AddToCart from "./AddToCart/AddToCart";
 import styles from "./styles.module.css";
 
 interface ProductDataProps {
-  product: Product
-  quantity: number
+  product: Product;
+  quantity: number;
 }
 
 const ProductData: React.FC<ProductDataProps> = ({ product, quantity }) => {

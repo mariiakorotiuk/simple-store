@@ -1,6 +1,18 @@
 .root {
   display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px;
+}
+
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productListItems {
+  display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
 }

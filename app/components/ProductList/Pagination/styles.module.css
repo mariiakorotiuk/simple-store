@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.page {
+  background-color: #E44D26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.currentPage {
+  background-color: white;
+  color: #E44D26;
+  border-radius: 5px;
+  border: 2px solid #E44D26;
+  width: 30px;
+  height: 30px;
+}
+
+.page:hover {
+  cursor: pointer;
+  background-color: #CC3A20;
+}
+
+.currentPage:hover {
+  cursor: pointer;
+  color: #CC3A20;
+  border: 3px solid #CC3A20;
+  font-weight: bold;
+}
