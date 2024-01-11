@@ -2,4 +2,5 @@ body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
   margin: 74px 0 0 0;
+  min-height: calc(100vh - 74px);
 }

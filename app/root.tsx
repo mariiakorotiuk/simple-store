@@ -6,11 +6,12 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useLoaderData,
+  useNavigation,
 } from "@remix-run/react";
 import { LinksFunction, LoaderFunctionArgs, json } from "@remix-run/node";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import Breadcrumb from "./components/Breadcrumb/Breadcrumb";
+import Loader from "./components/Loader/Loader";
 import Header from "./components/Header/Header";
 import appStylesHref from "./app.css";
 import { getSession } from "./services/session.server";
@@ -36,6 +37,7 @@ export const handle = {
 }
 
 export default function App() {
+  const navigation = useNavigation();
   return (
     <html lang="en">
       <head>
@@ -47,7 +49,9 @@ export default function App() {
       <body>
         <Header />
         <Breadcrumb />
-        <Outlet />
+        {navigation.state === "loading" ?
+          <Loader /> :
+          <Outlet />}
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
