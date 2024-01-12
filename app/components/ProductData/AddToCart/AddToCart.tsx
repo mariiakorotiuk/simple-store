@@ -1,6 +1,6 @@
 
 import { Form } from "@remix-run/react";
-import { Product } from "../../../services/product.sever.";
+import { Product } from "../../../services/product.sever";
 import styles from "./styles.module.css";
 
 interface AddToCartProps {

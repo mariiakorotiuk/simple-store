@@ -1,9 +1,10 @@
 import { Form, useSearchParams, useSubmit } from "@remix-run/react";
 import { FormEvent, useEffect, useState } from "react";
 import styles from "./styles.module.css";
+import { Category } from "@prisma/client";
 
 interface CategoryListProps {
-  categories: string[];
+  categories: Category[];
 }
 
 const CategoryList: React.FC<CategoryListProps> = ({ categories }) => {
@@ -56,11 +57,11 @@ const CategoryList: React.FC<CategoryListProps> = ({ categories }) => {
           <input
             type="checkbox"
             name="category"
-            checked={checkedCategories.includes(category)}
-            onChange={(event) => handleCheckboxChange(event, category)}
-            value={category}
+            checked={checkedCategories.includes(category.name)}
+            onChange={(event) => handleCheckboxChange(event, category.name)}
+            value={category.name}
           />{" "}
-          {category}
+          {category.name}
         </label>
       )}
     </Form>

@@ -1,4 +1,4 @@
-import { Product } from "../../services/product.sever.";
+import { Category, Product } from "@prisma/client";
 import CategoryList from "./CategoryList/CategoryList";
 import Pagination from "./Pagination/Pagination";
 import ProductListItem from "./ProductListItem/ProductListItem";
@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 
 interface ProductListProps {
   products: Product[];
-  categories: string[];
+  categories: Category[];
   limits: number;
   currentPage: number;
   total: number;

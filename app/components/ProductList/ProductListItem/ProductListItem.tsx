@@ -1,5 +1,5 @@
 import { Link, useLoaderData, useRouteLoaderData } from "@remix-run/react";
-import { Product } from "../../../services/product.sever.";
+import { Product } from "../../../services/product.sever";
 import AddToCart from "./AddToCart/AddToCart";
 import invariant from "tiny-invariant";
 import { CartItem } from "~/services/cart.server";

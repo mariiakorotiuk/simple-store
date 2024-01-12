@@ -1,9 +1,10 @@
-import { Product, getCartProducts, getProducts } from "~/services/product.sever.";
+import { getCartProducts } from "~/services/product.sever";
 import Cart from "../components/Cart/Cart";
 import { LoaderFunction, MetaFunction, json } from "@remix-run/node";
 import { Link, UIMatch, useLoaderData } from "@remix-run/react";
 import { createCart } from "~/services/cart.server";
 import { getSession } from "~/services/session.server";
+import { Product } from "@prisma/client";
 
 export interface CartProduct extends Product {
   quantity: number
@@ -22,7 +23,7 @@ export const loader: LoaderFunction = async ({ request })  => {
 
   return json({ 
     ...cartProducts,
-    products: cartProducts.products.map((product: Product): CartProduct => ({
+    products: cartProducts.map((product: Product): CartProduct => ({
         ...product,
         quantity: cartItems.find(item => Number(item.productId) === product.id)?.quantity || 0
       }))

@@ -1,4 +1,4 @@
-import { Product } from "../../services/product.sever.";
+import { Product } from "../../services/product.sever";
 import AddToCart from "./AddToCart/AddToCart";
 import styles from "./styles.module.css";
 

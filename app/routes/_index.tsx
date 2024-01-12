@@ -1,7 +1,8 @@
 import { LoaderFunction, LoaderFunctionArgs, MetaFunction, json, redirect } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react";
 import ProductList from "../components/ProductList/ProductList";
-import { ProductListFilter, getCategories, getProducts } from "../services/product.sever.";
+import { ProductListFilter, getProducts } from "../services/product.sever";
+import { getCategories } from "~/services/category.server";
 
 export const loader: LoaderFunction = async ({
   request,
@@ -43,6 +44,8 @@ export const meta: MetaFunction = () => {
 
 export default function Home() {  
   const data = useLoaderData<typeof loader>();
+
+  console.log(data)
 
   return (
     <ProductList

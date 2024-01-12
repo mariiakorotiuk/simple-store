@@ -10,6 +10,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@prisma/client": "^5.8.0",
     "@remix-run/css-bundle": "^2.4.1",
     "@remix-run/node": "^2.4.0",
     "@remix-run/react": "^2.4.0",
@@ -29,6 +30,7 @@
     "@typescript-eslint/parser": "^6.13.0",
     "eslint": "^8.47.0",
     "eslint-plugin-react": "^7.33.2",
+    "prisma": "^5.8.0",
     "typescript": "^5.1.6"
   },
   "engines": {

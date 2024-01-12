@@ -1,5 +1,5 @@
 
-import { Product } from "../../../../services/product.sever.";
+import { Product } from "../../../../services/product.sever";
 import { useFetcher } from "@remix-run/react";
 import styles from "./styles.module.css";
 

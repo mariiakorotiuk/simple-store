@@ -1,7 +1,7 @@
 import { ActionFunctionArgs, LoaderFunction, LoaderFunctionArgs, MetaFunction, json } from "@remix-run/node"
 import { Link, UIMatch, useLoaderData, useRouteLoaderData } from "@remix-run/react";
 import invariant from "tiny-invariant";
-import { Product, getProduct } from "../services/product.sever.";
+import { Product, getProduct } from "../services/product.sever";
 import ProductData from "../components/ProductData/ProductData";
 import { commitSession, getSession } from "../services/session.server";
 import { CartItem, createCart } from "../services/cart.server";
